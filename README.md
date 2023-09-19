@@ -3,6 +3,7 @@ WakeDuino Server Sketch for Arduino - Sends WOL Magic Packets to devices in your
 I needed a lightweight low-energy system to wake devices in my LAN from outside. Didn't want to use my RaspBerry because I wanted to use it as a RetroPie. :D
 It has been also very fun to try to make it work considering the limitations of my Arduino UNO.
 I used an old Arduino UNO and the official Ethernet Shield v2.
+Check also the app made in Flutter that connects to this server: https://github.com/banorz/wakeduino-client
 
 The biggest difficulty I had to overcome was the dynamic memory, which easily filled up and made the code unstable. <br/>
 I implemented a JSON config file, but I had to move to more simple solutions, because the JSON parser library I was using was using too much memory making the Arduino crash.<br/>
