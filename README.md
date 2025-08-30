@@ -1,4 +1,13 @@
-# wakeduino-server
+# WakeDuino
+WakeDuino is a DIY project that allows you to wake up your devices remotely using Wake-on-LAN (WoL) technology.
+It consists of an Arduino connected to your network, which listens for WoL packets and sends them to the target device.
+Check out also the client Flutter app: https://github.com/banorz/wakeduino-client
+
+# WakeDuino Requirements
+- An Arduino board (e.g., Arduino Uno, Arduino Nano)
+- Ethernet or Wi-Fi shield/module for network connectivity
+
+# WakeDuino Server
 WakeDuino Server Sketch for Arduino - Sends WOL Magic Packets to devices in your LAN. It is triggered by messages received on a TCP socket.
 I needed a lightweight low-energy system to wake devices in my LAN from outside. Didn't want to use my RaspBerry because I wanted to use it as a RetroPie. :D
 It has been also very fun to try to make it work considering the limitations of my Arduino UNO.
